@@ -1,0 +1,8 @@
+name: B
+on: push
+permissions: {}
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "workflow B, job test, fails" && exit 1
